@@ -1,0 +1,39 @@
+{
+  "include": [
+    "./src/**/*.ts",
+    "./test/**/*.ts",
+    "./scripts/**/*.ts",
+    "./ecosystem.config.js",
+    "./test*.ts"
+  ],
+  "exclude": ["node_modules", "dist", ".vscode"],
+  "watchOptions": {
+    "watchFile": "fixedPollingInterval",
+  },
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "incremental": false,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noImplicitOverride": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "~/*": ["./*"],
+      "@env": ["./envConfig"],
+    }
+  }
+}
