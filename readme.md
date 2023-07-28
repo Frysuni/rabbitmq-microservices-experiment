@@ -6,9 +6,9 @@ __Тут 2 микросервиса в одном проекте!__ Я не ст
 
 ### Логика самого проекта такова:
 
-request http://localhost/?name=**myName**
+request http://localhost/?name=myName
 response "Hello, **myName**, you've been here **3** times already"
-request http://localhost/?name=**myName**
+request http://localhost/?name=myName
 response "Hello, **myName**, you've been here **4** times already"
 
 где запросы обрабатывает **M1**, а логика подсчета запросов в **M2**
